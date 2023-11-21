@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.note {
+  background-color: #ccccff;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note.new {
+  background-color: #e6e6fa;
+}
+
+textarea {
+  background: none;
+  resize: none;
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.save:hover {
+  cursor: pointer;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  background-color: #ffff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  min-height: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.search input {
+  border: none;
+  width: 100%;
+  height: 25px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.mode {
+  width: auto;
+  height: 40px;
+}
+
+.mode-button {
+  background: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 95%;
+}
+
+.dark-mode {
+  background-color: #212121;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode h5 {
+  color: white;
+}
+
+.dark-mode a {
+  color: #fff;
+}
+
+.nav {
+  box-shadow: 2px 0px 10px #888888;
+}
+
+.box {
+  min-height: 100vh;
+}
+
+li {
+  display: flex;
+  line-height: 3;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.account {
+  position: absolute;
+  top: 80%;
+}
+
+/* VerticalNavbar.css */
+.vertical-navbar {
+  width: 200px;
+  height: 100vh;
+  box-shadow: 2px 0px 10px #888888;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1098px) {
+  .vertical-navbar {
+    width: 150px;
+  }
+
+  .nav-link {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 798px) {
+  .vertical-navbar {
+    width: 100px;
+  }
+
+  .head {
+    display: none;
+  }
+
+  .mode-button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 92%;
+  }
+
+  .logo {
+    margin: 15px 5px;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 498px) {
+  .vertical-navbar {
+    width: 80px;
+    height: 100%;
+  }
+
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: 0.3s;
+    font-size: 0.8rem;
+    margin-left: 2%;
+  }
+
+  .head {
+    display: none;
+  }
+
+  .logo {
+    margin: 8px 0px;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .mode-button {
+    margin-left: 87%;
+  }
+
+  .note{
+    margin-left: 7%;
+  }
+
+  .search{
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 377px) {
+  .search {
+    width: 240px;
+  }
+}

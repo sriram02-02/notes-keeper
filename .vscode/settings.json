@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/7c07988b-4e02-4ebf-bfb5-c6b34875713c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/CDMproject",
+    "appService.deploySubpath": "."
+}
